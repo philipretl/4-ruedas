@@ -1,4 +1,4 @@
-# 4-ruedas Project for Laravel, Vue.js developer candidate for GradiWeb.
+# 4-ruedas Project for Laravel, Vue.js developer
 
 
 ## Url BackEnd deploy 
