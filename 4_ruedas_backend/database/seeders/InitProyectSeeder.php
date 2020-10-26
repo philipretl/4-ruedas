@@ -2,11 +2,14 @@
 
 namespace Database\Seeders;
 
+use App\Models\Owner;
+use App\Models\Vehicle;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use Illuminate\Support\Facades\Hash;
+use DB;
 
 class InitProyectSeeder extends Seeder
 {
@@ -66,5 +69,10 @@ class InitProyectSeeder extends Seeder
 
         $user = User::where('email', 'customer@4ruedas.com')->first();
         $user->assignRole('customer');
+
+        $this->owners = Owner::factory()
+            ->has(Vehicle::factory()->count(3), 'vehicles')
+            ->count(16)
+            ->create();
     }
 }

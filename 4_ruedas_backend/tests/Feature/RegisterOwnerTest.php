@@ -95,6 +95,43 @@ class RegisterOwnerTest extends TestCase
     /**
      * @test
      */
+    public function it_check_if_the_dni_is_numeric()
+    {
+        $response = $this->withHeaders([
+            'Accept' => 'application/json',
+        ])->json('POST', $this->url,
+            [
+                'name' => $this->owner->name,
+                'last_name' => $this->owner->last_name,
+                'dni' => 'it is not a numeric dni',
+
+            ]
+        );
+        $response->assertStatus(400)
+            ->assertJson([
+                'success' => false,
+                'description' => 'Exist conflict with the request, please check the errors or messages.',
+                'data' => [],
+                'errors' => [
+                    [
+                        'error_code' => 'NUMERIC',
+                        'field' => 'dni',
+                        'message' => 'The dni must be a number.',
+                    ],
+                ],
+                'messages' => [
+                    [
+                        'message_code' => 'CHECK_DATA',
+                        'message' => 'The form has errors whit the inputs.',
+                    ],
+                ],
+
+            ]);
+    }
+
+    /**
+     * @test
+     */
     public function it_check_if_the_request_contains_the_field_dni()
     {
         $response = $this->withHeaders([
