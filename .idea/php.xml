@@ -110,6 +110,7 @@
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/venoudev/results" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d60e969a-757a-41a1-b659-9800d498e7d3" name="Default Changelist" comment="" />
+    <list default="true" id="d60e969a-757a-41a1-b659-9800d498e7d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/4_ruedas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/4_ruedas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/config/app.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/4_ruedas_backend/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/4_ruedas_frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -124,6 +134,7 @@
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/venoudev/results" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jNS1vVo2fP7MrxEP40Npkuc5Bj" />
@@ -153,11 +164,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603642844828</updated>
-      <workItem from="1603642845900" duration="2833000" />
+      <workItem from="1603642845900" duration="7726000" />
+      <workItem from="1603652153840" duration="2422000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603656946208">
+      <screen x="0" y="23" width="1440" height="846" />
+    </state>
+    <state x="458" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.846/1440.23.1366.745@0.23.1440.846" timestamp="1603656946208" />
   </component>
 </project>
