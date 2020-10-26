@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d60e969a-757a-41a1-b659-9800d498e7d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/.env.testing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Services/Contracts/OwnerService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Services/OwnerServiceImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/config/4ruedas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Documentation/1.0/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/4_ruedas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/4_ruedas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Services/Contracts/OwnersService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Services/OwnersServiceImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Validators/RegisterOwnerValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Validators/RegisterOwnerValidator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174022_create_owners_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174022_create_owners_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174035_create_vehicles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174035_create_vehicles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/InfoOwnerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/InfoOwnerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/RegisterOwnerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/RegisterOwnerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +137,10 @@
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/venoudev/results" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/binarytorch/larecipe" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/erusev/parsedown-extra" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/symfony/dom-crawler" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jNS1vVo2fP7MrxEP40Npkuc5Bj" />
@@ -183,7 +178,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603642844828</updated>
       <workItem from="1603642845900" duration="7726000" />
-      <workItem from="1603652153840" duration="17186000" />
+      <workItem from="1603652153840" duration="18709000" />
+      <workItem from="1603691786831" duration="2957000" />
     </task>
     <servers />
   </component>
@@ -206,10 +202,10 @@
     <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/-1024.0.1024.768/1440.0.1366.768@0.0.1440.900" timestamp="1603689021640" />
     <state x="458" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.846/1440.23.1366.745@0.23.1440.846" timestamp="1603656946208" />
     <state x="458" y="214" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877/-1024.23.1024.745/1440.0.1366.737@0.23.1440.877" timestamp="1603676291403" />
-    <state x="-1024" y="0" width="1024" height="768" key="dock-window-1" timestamp="1603683874858">
+    <state x="-1024" y="0" width="1024" height="768" maximized="true" key="dock-window-1" timestamp="1603692109545">
       <screen x="-1024" y="23" width="1024" height="745" />
     </state>
-    <state x="-1024" y="0" width="1024" height="768" key="dock-window-1/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603683874858" />
+    <state x="-1024" y="0" width="1024" height="768" maximized="true" key="dock-window-1/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603692109545" />
     <state x="-1024" y="0" width="1024" height="768" key="dock-window-1/0.23.1440.877/-1024.0.1024.768/1440.23.1366.714@0.23.1440.877" timestamp="1603676801671" />
   </component>
 </project>

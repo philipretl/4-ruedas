@@ -111,6 +111,10 @@
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/venoudev/results" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/binarytorch/larecipe" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/erusev/parsedown-extra" />
+      <path value="$PROJECT_DIR$/4_ruedas_backend/vendor/symfony/dom-crawler" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

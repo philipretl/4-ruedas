@@ -117,6 +117,7 @@ class InfoOwnerTest extends TestCase
         $response = $this->withHeaders([
             'Accept' =>  'application/json'
         ])->json('GET', $this->url.'/list');
+
         $response->assertStatus(200)
             ->assertJson([
                 'success'=> true,
@@ -141,6 +142,7 @@ class InfoOwnerTest extends TestCase
         $response = $this->withHeaders([
             'Accept' =>  'application/json'
         ])->json('GET', $this->url.'/list');
+
         $response->assertStatus(200)
             ->assertJson([
                 'success'=> true,

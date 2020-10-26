@@ -16,7 +16,7 @@ class RegisterOwnerValidator
         $validator = Validator::make($data, [
             'name' => ['bail', 'required'],
             'last_name' => ['bail', 'required'],
-            'dni' => ['bail', 'required', 'unique:owners,dni'],
+            'dni' => ['bail', 'required', 'unique:owners,dni', 'numeric'],
         ]);
 
         if ($validator->fails()) {

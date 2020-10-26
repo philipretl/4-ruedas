@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/4_ruedas_backend/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/4_ruedas_backend/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/binarytorch/larecipe" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/dnoegel/php-xdg-base-dir" />
@@ -17,6 +18,8 @@
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/dragonmantank/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/erusev/parsedown-extra" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/facade/flare-client-php" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/facade/ignition" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/facade/ignition-contracts" />
@@ -87,6 +90,7 @@
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/css-selector" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/dom-crawler" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/error-handler" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/event-dispatcher-contracts" />
