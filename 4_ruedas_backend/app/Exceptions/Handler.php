@@ -54,14 +54,14 @@ class Handler extends ExceptionHandler
         });
 
 
-        $this->renderable(function(NotFoundHttpException $e, $request){
-            $result= ResultManager::createResult();
-            $result->fail();
-            $result->setCode(404);
-            $result->addError('ROUTE_NOT_FOUND','Invalid route');
-            $result->setDescription('This is posible because your route is incorrectly');
-            return $result->getJsonResponse();
-        });
+        //$this->renderable(function(NotFoundHttpException $e, $request){
+        //    $result= ResultManager::createResult();
+        //    $result->fail();
+        //    $result->setCode(404);
+        //    $result->addError('ROUTE_NOT_FOUND','Invalid route');
+        //    $result->setDescription('This is posible because your route is incorrectly');
+        //    return $result->getJsonResponse();
+        //});
 
         $this->renderable(function(MethodNotAllowedHttpException $e, $request){
 

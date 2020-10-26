@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d60e969a-757a-41a1-b659-9800d498e7d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/InitProyectSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/InitProyectSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Exceptions/Handler.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +170,8 @@
       <updated>1603642844828</updated>
       <workItem from="1603642845900" duration="7726000" />
       <workItem from="1603652153840" duration="18709000" />
-      <workItem from="1603691786831" duration="3291000" />
+      <workItem from="1603691786831" duration="4015000" />
+      <workItem from="1603697319797" duration="253000" />
     </task>
     <servers />
   </component>
