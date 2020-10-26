@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d60e969a-757a-41a1-b659-9800d498e7d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Documentation/1.0/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/4_ruedas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/4_ruedas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Validators/RegisterOwnerValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Validators/RegisterOwnerValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/InfoOwnerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/InfoOwnerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/RegisterOwnerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/RegisterOwnerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/InitProyectSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/seeders/InitProyectSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +170,7 @@
       <updated>1603642844828</updated>
       <workItem from="1603642845900" duration="7726000" />
       <workItem from="1603652153840" duration="18709000" />
-      <workItem from="1603691786831" duration="2957000" />
+      <workItem from="1603691786831" duration="3291000" />
     </task>
     <servers />
   </component>
@@ -196,10 +187,10 @@
     </state>
     <state x="489" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1024.0.1024.768/1440.0.1366.768@0.0.1440.900" timestamp="1603685269278" />
     <state x="489" y="126" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877/-1024.23.1024.745/1440.0.1366.737@0.23.1440.877" timestamp="1603675451226" />
-    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603689021640">
+    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603695185062">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/-1024.0.1024.768/1440.0.1366.768@0.0.1440.900" timestamp="1603689021640" />
+    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/-1024.0.1024.768/1440.0.1366.768@0.0.1440.900" timestamp="1603695185062" />
     <state x="458" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.846/1440.23.1366.745@0.23.1440.846" timestamp="1603656946208" />
     <state x="458" y="214" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877/-1024.23.1024.745/1440.0.1366.737@0.23.1440.877" timestamp="1603676291403" />
     <state x="-1024" y="0" width="1024" height="768" maximized="true" key="dock-window-1" timestamp="1603692109545">
