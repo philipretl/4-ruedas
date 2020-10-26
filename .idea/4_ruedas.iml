@@ -82,6 +82,7 @@
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/sebastian/resource-operations" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/spatie/laravel-permission" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/4_ruedas_backend/vendor/symfony/css-selector" />
