@@ -24,7 +24,7 @@ https://4ruedas.venoudev.com
 
 |Method|URI|
 |:-|:-|:-|
-|PUT|`/api/v1/owner/delete/{owner_id}`|
+|DELETE|`/api/v1/owner/delete/{owner_id}`|
 
 |Headers|
 |:-|
@@ -53,7 +53,7 @@ https://4ruedas.venoudev.com
 ```json
 {
     "success" : true,
-    "description" : "Owner deleted in mallpty successfuly.",
+    "description" : "Owner deleted in 4 ruedas successfully.",
     "data" : {},
     "errors" : [],
     "messages" : [
