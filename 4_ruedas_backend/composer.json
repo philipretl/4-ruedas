@@ -15,6 +15,7 @@
         "laravel/framework": "^8.0",
         "laravel/sanctum": "^2.7",
         "laravel/tinker": "^2.0",
+        "spatie/laravel-permission": "^3.17",
         "venoudev/results": "^0.2.0"
     },
     "require-dev": {
