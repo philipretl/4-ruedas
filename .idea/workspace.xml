@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d60e969a-757a-41a1-b659-9800d498e7d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/4_ruedas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/4_ruedas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/.env.testing" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Services/Contracts/OwnerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Services/OwnerServiceImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ruedas_backend/config/4ruedas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Services/Contracts/OwnersService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/app/Services/OwnersServiceImpl.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_ruedas_backend/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174022_create_owners_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174022_create_owners_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174035_create_vehicles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/database/migrations/2020_10_25_174035_create_vehicles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/4_ruedas_backend/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_ruedas_backend/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,9 +155,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/4_ruedas_backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -154,7 +166,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4_ruedas_backend" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -165,7 +183,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603642844828</updated>
       <workItem from="1603642845900" duration="7726000" />
-      <workItem from="1603652153840" duration="2422000" />
+      <workItem from="1603652153840" duration="17186000" />
     </task>
     <servers />
   </component>
@@ -173,9 +191,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603656946208">
-      <screen x="0" y="23" width="1440" height="846" />
+    <state x="341" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603673352676">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="341" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-1024.0.1024.768/1440.0.1366.768@0.0.1440.900" timestamp="1603673352676" />
+    <state x="489" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1603685269278">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="489" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1024.0.1024.768/1440.0.1366.768@0.0.1440.900" timestamp="1603685269278" />
+    <state x="489" y="126" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877/-1024.23.1024.745/1440.0.1366.737@0.23.1440.877" timestamp="1603675451226" />
+    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603689021640">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/-1024.0.1024.768/1440.0.1366.768@0.0.1440.900" timestamp="1603689021640" />
     <state x="458" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.846/1440.23.1366.745@0.23.1440.846" timestamp="1603656946208" />
+    <state x="458" y="214" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877/-1024.23.1024.745/1440.0.1366.737@0.23.1440.877" timestamp="1603676291403" />
+    <state x="-1024" y="0" width="1024" height="768" key="dock-window-1" timestamp="1603683874858">
+      <screen x="-1024" y="23" width="1024" height="745" />
+    </state>
+    <state x="-1024" y="0" width="1024" height="768" key="dock-window-1/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603683874858" />
+    <state x="-1024" y="0" width="1024" height="768" key="dock-window-1/0.23.1440.877/-1024.0.1024.768/1440.23.1366.714@0.23.1440.877" timestamp="1603676801671" />
   </component>
 </project>

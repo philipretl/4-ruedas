@@ -16,7 +16,8 @@ class CreateVehiclesTable extends Migration
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
             $table->string('brand');
-            $table->string('model');
+            $table->string('model')->nullable();
+            $table->enum('type',['motorcycle', 'car', 'truck']);
             $table->string('vehicle_plate');
             $table->foreignId('owner_id')
                 ->constrained('owners')

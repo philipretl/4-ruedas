@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\OwnerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'v1'], function () {
+
+    Route::prefix('owner')
+        ->group(function () {
+            Route::post('/register', [OwnerController::class, 'store']);
+            Route::get('/find/{owner_id}', [OwnerController::class, 'show']);
+            Route::get('/list', [OwnerController::class, 'index']);
+            Route::delete('/delete/{owner_id}', [OwnerController::class, 'destroy']);
+    });
 });

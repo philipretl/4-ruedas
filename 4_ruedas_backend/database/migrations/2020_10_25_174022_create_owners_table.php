@@ -19,6 +19,7 @@ class CreateOwnersTable extends Migration
             $table->string('last_name');
             $table->bigInteger('dni');
             $table->foreignId('user_id')
+                ->nullable()
                 ->constrained('users')
                 ->onDelete('cascade');
             $table->softDeletes();
