@@ -9,5 +9,6 @@ echo "\n🦊 ️ Migration finished\n"
 echo "\n🦊  Running test ... \n"
 php artisan env
 php artisan test
+echo "\n🦊  Finishing test ... \n"
 php artisan config:cache --env=local
 php artisan env

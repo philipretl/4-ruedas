@@ -6,9 +6,11 @@ use App\Actions\DeleteModelAction;
 use App\Actions\FindOwnerAction;
 use App\Actions\ListOwnerAction;
 use App\Actions\RegisterOwnerAction;
+use App\Actions\UpdateOwnerAction;
 use App\Models\Owner;
 use App\Services\Contracts\OwnerService;
 use App\Validators\RegisterOwnerValidator;
+use App\Validators\UpdateOwnerValidator;
 
 class OwnerServiceImpl implements OwnerService{
 
@@ -25,9 +27,11 @@ class OwnerServiceImpl implements OwnerService{
 
     }
 
-    public function updateOwner(array $data, int $owner_id): Owner
+    public function updateOwner(array $data, int $owner_id):Owner
     {
-        // TODO: Implement updateOwner() method.
+        $owner = FindOwnerAction::execute($owner_id);
+        UpdateOwnerValidator::execute($data, $owner);
+        return UpdateOwnerAction::execute($data, $owner);
     }
 
     public function deleteOwner(int $owner_id, bool $hard_delete = false)

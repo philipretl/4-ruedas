@@ -73,7 +73,7 @@ class OwnerController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $owner_id
      * @return \Illuminate\Http\Response
      */
     public function show($owner_id)
@@ -92,19 +92,32 @@ class OwnerController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  int  $owner_id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $owner_id)
     {
-        //
+        $data = $request->only([
+            'name',
+            'last_name',
+            'dni',
+            'user_id',
+        ]);
+        $owner = $this->service->updateOwner($data, $owner_id);
+
+        $this->result->success();
+        $this->result->setCode(200);
+        $this->result->addMessage('UPDATED', 'Process completed.');
+        $this->result->setDescription('Owner updated in 4 ruedas successfully.');
+        $this->result->addDatum( 'owner', OwnerResource::make($owner));
+
+        return $this->result->getJsonResponse();
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param $owner_id
+     * @return mixed
      */
     public function destroy(Request $request, $owner_id)
     {

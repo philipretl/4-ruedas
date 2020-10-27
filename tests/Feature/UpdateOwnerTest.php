@@ -2,20 +2,21 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
 use App\Models\Owner;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class RegisterOwnerTest extends TestCase
+class UpdateOwnerTest extends TestCase
 {
-    protected $url = '/api/v1/owner/register';
+    protected $url = '/api/v1/owner/update';
     protected $owner;
+    protected $owner_unsaved;
 
     public function setUp():void{
         parent::setUp();
-        $this->owner = Owner::factory()->make();
+        $this->owner_unsaved = Owner::factory()->make();
+        $this->owner = Owner::factory()->create();
     }
 
     /**
@@ -24,13 +25,12 @@ class RegisterOwnerTest extends TestCase
     public function it_check_if_the_request_contains_the_field_name()
     {
 
-
         $response = $this->withHeaders([
             'Accept' => 'application/json',
-        ])->json('POST', $this->url,
+        ])->json('PUT', $this->url. '/' . $this->owner->id,
             [
-               'last_name' => $this->owner->last_name,
-               'dni' => $this->owner->dni,
+                'last_name' => $this->owner_unsaved->last_name,
+                'dni' => $this->owner_unsaved->dni,
 
             ]
         );
@@ -64,10 +64,10 @@ class RegisterOwnerTest extends TestCase
     {
         $response = $this->withHeaders([
             'Accept' => 'application/json',
-        ])->json('POST', $this->url,
+        ])->json('PUT', $this->url. '/' . $this->owner->id,
             [
-                'name' => $this->owner->name,
-                'dni' => $this->owner->dni,
+                'name' => $this->owner_unsaved->name,
+                'dni' => $this->owner_unsaved->dni,
 
             ]
         );
@@ -100,10 +100,10 @@ class RegisterOwnerTest extends TestCase
     {
         $response = $this->withHeaders([
             'Accept' => 'application/json',
-        ])->json('POST', $this->url,
+        ])->json('PUT', $this->url. '/' . $this->owner->id,
             [
-                'name' => $this->owner->name,
-                'last_name' => $this->owner->last_name,
+                'name' => $this->owner_unsaved->name,
+                'last_name' => $this->owner_unsaved->last_name,
                 'dni' => 'it is not a numeric dni',
 
             ]
@@ -137,10 +137,10 @@ class RegisterOwnerTest extends TestCase
     {
         $response = $this->withHeaders([
             'Accept' => 'application/json',
-        ])->json('POST', $this->url,
+        ])->json('PUT', $this->url. '/' . $this->owner->id,
             [
-                'name' => $this->owner->name,
-                'last_name' => $this->owner->last_name,
+                'name' => $this->owner_unsaved->name,
+                'last_name' => $this->owner_unsaved->last_name,
 
             ]
         );
@@ -172,17 +172,15 @@ class RegisterOwnerTest extends TestCase
      */
     public function it_check_if_owner_dni_is_already_registered()
     {
-
-        $this->owner->save();
+        $this->owner_unsaved->save();
 
         $response = $this->withHeaders([
             'Accept' => 'application/json',
-        ])->json('POST', $this->url,
+        ])->json('PUT', $this->url. '/' . $this->owner->id,
             [
-                'name' => $this->owner->name,
-                'last_name' => $this->owner->last_name,
-                'dni' => $this->owner->dni,
-
+                'name' => $this->owner_unsaved->name,
+                'last_name' => $this->owner_unsaved->last_name,
+                'dni' => $this->owner_unsaved->dni,
             ]
         );
         $response->assertStatus(400)
@@ -211,33 +209,61 @@ class RegisterOwnerTest extends TestCase
     /**
      * @test
      */
-    public function it_check_if_the_owner_was_registered_correctly()
-    {
-
+    public function it_checks_if_the_owner_to_update_exists(){
 
         $response = $this->withHeaders([
             'Accept' => 'application/json',
-        ])->json('POST', $this->url,
+        ])->json('PUT', $this->url. '/' . -1,
             [
-                'name' => $this->owner->name,
-                'last_name' => $this->owner->last_name,
-                'dni' => $this->owner->dni,
+                'name' => $this->owner_unsaved->name,
+                'last_name' => $this->owner_unsaved->last_name,
+                'dni' => $this->owner_unsaved->dni,
+            ]
+        );
+        $response->assertStatus(400)
+            ->assertJson([
+                'success'=> false,
+                'description' => 'Exist conflict with the request, please check the errors or messages.',
+                'data' => [],
+                'errors' => [],
+                'messages' => [
+                    [
+                        'message_code' => 'NOT_FOUND',
+                        'message' =>  'Resource not found check your request data.'
+                    ]
+                ]
+
+            ]);
+    }
+
+    /**
+     * @test
+     */
+    public function it_check_if_the_owner_was_updated_correctly()
+    {
+        $response = $this->withHeaders([
+            'Accept' => 'application/json',
+        ])->json('PUT', $this->url. '/' . $this->owner->id,
+            [
+                'name' => $this->owner_unsaved->name,
+                'last_name' => $this->owner_unsaved->last_name,
+                'dni' => $this->owner_unsaved->dni,
             ]
         );
         $response->assertStatus(200)
             ->assertJson([
                 'success' => true,
-                'description' => 'Owner registered in 4 ruedas successfully.',
+                'description' => 'Owner updated in 4 ruedas successfully.',
                 'errors' => [],
                 'data' => [
                     'owner' => [
-                        'full_name' => $this->owner->full_name,
-                        'dni' => $this->owner->dni,
+                        'full_name' => $this->owner_unsaved->full_name,
+                        'dni' => $this->owner_unsaved->dni,
                     ]
                 ],
                 'messages' => [
                     [
-                        'message_code' => 'REGISTERED',
+                        'message_code' => 'UPDATED',
                         'message' => 'Process completed.',
                     ],
                 ],

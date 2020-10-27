@@ -20,6 +20,7 @@ Route::group(['prefix' => 'v1'], function () {
     Route::prefix('owner')
         ->group(function () {
             Route::post('/register', [OwnerController::class, 'store']);
+            Route::put('/update/{owner_id}', [OwnerController::class, 'update']);
             Route::get('/find/{owner_id}', [OwnerController::class, 'show']);
             Route::get('/list', [OwnerController::class, 'index']);
             Route::delete('/delete/{owner_id}', [OwnerController::class, 'destroy']);
