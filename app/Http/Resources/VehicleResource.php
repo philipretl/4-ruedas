@@ -21,6 +21,7 @@ class VehicleResource extends JsonResource
             'model' => $this->model,
             'vehicle_plate' => $this->vehicle_plate,
             'type' => $this->type,
+            'owner_id' => $this->owner_id
         ];
     }
 }

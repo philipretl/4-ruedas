@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\OwnerController;
+use App\Http\Controllers\Api\VehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,9 @@ Route::group(['prefix' => 'v1'], function () {
             Route::get('/list', [OwnerController::class, 'index']);
             Route::delete('/delete/{owner_id}', [OwnerController::class, 'destroy']);
     });
+
+    Route::prefix('vehicle')
+        ->group(function () {
+            Route::post('/register', [VehicleController::class, 'store']);
+        });
 });

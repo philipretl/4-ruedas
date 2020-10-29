@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba798d7c-9d6b-4921-b005-a03386e109f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/OwnerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/OwnerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/OwnerServiceImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/OwnerServiceImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Documentation/1.0/owner/update_owner.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Documentation/1.0/vehicle/register_vehicle.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Documentation/1.0/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/Documentation/1.0/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Documentation/1.0/owner/register_owner.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/Documentation/1.0/owner/register_owner.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/VehicleResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/VehicleResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/ServicesProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/ServicesProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Contracts/VehiclesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Contracts/VehiclesService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/VehiclesServiceImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/VehiclesServiceImpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/RegisterOwnerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RegisterOwnerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -138,6 +143,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jTlFvz4FLsoNfa1mGjBr5pfsjL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -152,7 +160,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Documentation/1.0" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -168,7 +182,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603835861454</updated>
-      <workItem from="1603835864127" duration="4553000" />
+      <workItem from="1603835864127" duration="9797000" />
+      <workItem from="1603925128277" duration="2586000" />
     </task>
     <servers />
   </component>
@@ -180,17 +195,30 @@
       <screen x="0" y="23" width="1440" height="846" />
     </state>
     <state x="497" y="331" key="#Composer/0.23.1440.846/1440.23.1366.745@0.23.1440.846" timestamp="1603835876128" />
-    <state x="458" y="208" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603836651164">
+    <state x="489" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1603850551958">
       <screen x="0" y="23" width="1440" height="846" />
     </state>
-    <state x="458" y="208" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603836651164" />
-    <state x="-1010" y="23" width="1058" height="745" maximized="true" key="dock-window-1" timestamp="1603839628304">
+    <state x="489" y="126" key="#com.intellij.ide.util.MemberChooser/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603850551958" />
+    <state x="458" y="208" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603850990470">
+      <screen x="0" y="23" width="1440" height="846" />
+    </state>
+    <state x="458" y="208" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603850990470" />
+    <state x="1458" y="23" width="1341" height="738" key="dock-window-1" timestamp="1603937553685">
+      <screen x="1440" y="23" width="1366" height="745" />
+    </state>
+    <state x="1458" y="23" width="1341" height="738" key="dock-window-1/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603937553685" />
+    <state x="0" y="155" width="1024" height="745" key="dock-window-1/0.23.1440.846/1440.23.1366.745@0.23.1440.846" timestamp="1603843542027" />
+    <state x="-1024" y="23" width="1024" height="708" key="dock-window-2" timestamp="1603851393431">
       <screen x="-1024" y="23" width="1024" height="745" />
     </state>
-    <state x="-1010" y="23" width="1058" height="745" maximized="true" key="dock-window-1/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603839628304" />
+    <state x="-1024" y="23" width="1024" height="708" key="dock-window-2/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603851393431" />
     <state x="438" y="239" key="refactoring.ChangeSignatureDialog" timestamp="1603839756116">
       <screen x="0" y="23" width="1440" height="846" />
     </state>
     <state x="438" y="239" key="refactoring.ChangeSignatureDialog/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603839756116" />
+    <state x="385" y="193" width="670" height="676" key="search.everywhere.popup" timestamp="1603851148213">
+      <screen x="0" y="23" width="1440" height="846" />
+    </state>
+    <state x="385" y="193" width="670" height="676" key="search.everywhere.popup/0.23.1440.846/-1024.23.1024.745/1440.23.1366.745@0.23.1440.846" timestamp="1603851148213" />
   </component>
 </project>

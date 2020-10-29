@@ -4,4 +4,7 @@
     - [List](/api/docs/{{version}}/owner/list_owner)
     - [Find](/api/docs/{{version}}/owner/find_owner)
     - [Register](/api/docs/{{version}}/owner/register_owner)
+    - [Update](/api/docs/{{version}}/owner/update_owner)
     - [Delete](/api/docs/{{version}}/owner/delete_owner)
+- ## Vehicle Api 
+    - [Register](/api/docs/{{version}}/vehicle/register_vehicle)

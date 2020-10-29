@@ -1,8 +1,8 @@
 <p align="center"><a href="https://venoudev.com/"><img src="https://venoudev.com/img/venoudev-2.png" width="200" alt="Mallpty"></a>
 </p>
 
-# API Docs  Register owner.
-### It allows to register a new owner in 4 ruedas.
+# API Docs Update owner.
+### It allows to update a new owner in 4 ruedas.
 - [Base Url](#base_url)
 - [Request Parameters](#request_parameters)
 - [Responses](#response)
@@ -22,7 +22,7 @@ https://4ruedas.venoudev.com
 
 |Method|URI|
 |:-|:-|:-|
-|POST|`/api/v1/owner/register`|
+|POST|`/api/v1/owner/update/{owner_id}`|
 
 |Headers|
 |:-|
@@ -53,7 +53,7 @@ https://4ruedas.venoudev.com
 ```json
 {
     "success" : true,
-    "description": "Owner registered in 4 ruedas successfully.",
+    "description": "Owner updated in 4 ruedas successfully.",
     "data" : {
         "owner":{
             "id":1,
@@ -64,7 +64,7 @@ https://4ruedas.venoudev.com
         "errors":[],
         "messages":[
             {
-                "message_code":"REGISTERED", 
+                "message_code":"UPDATED", 
                 "message":"Process Completed."
             }
         ]
