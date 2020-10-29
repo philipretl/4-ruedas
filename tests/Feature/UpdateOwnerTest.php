@@ -271,4 +271,40 @@ class UpdateOwnerTest extends TestCase
             ]);
 
     }
+
+    /**
+     * @test
+     */
+    public function it_check_if_the_owner_was_updated_correctly_with_the_same_dni()
+    {
+        $response = $this->withHeaders([
+            'Accept' => 'application/json',
+        ])->json('PUT', $this->url. '/' . $this->owner->id,
+            [
+                'name' => $this->owner_unsaved->name,
+                'last_name' => $this->owner_unsaved->last_name,
+                'dni' => $this->owner->dni,
+            ]
+        );
+        $response->assertStatus(200)
+            ->assertJson([
+                'success' => true,
+                'description' => 'Owner updated in 4 ruedas successfully.',
+                'errors' => [],
+                'data' => [
+                    'owner' => [
+                        'full_name' => $this->owner_unsaved->full_name,
+                        'dni' => $this->owner->dni,
+                    ]
+                ],
+                'messages' => [
+                    [
+                        'message_code' => 'UPDATED',
+                        'message' => 'Process completed.',
+                    ],
+                ],
+
+            ]);
+
+    }
 }

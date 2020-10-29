@@ -18,7 +18,7 @@ class UpdateOwnerValidator
         $validator = Validator::make($data, [
             'name' => ['bail', 'required'],
             'last_name' => ['bail', 'required'],
-            'dni' => ['bail', 'required', 'numeric', Rule::unique('owners')->ignore($owner->dni)],
+            'dni' => ['bail', 'required', 'numeric', Rule::unique('owners')->ignore($owner)],
         ]);
 
         if ($validator->fails()) {
