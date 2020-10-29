@@ -7,6 +7,6 @@ class ListOwnerAction
 {
     public static function execute(){
         $pagination = config('4ruedas.pagination');
-        return Owner::paginate($pagination);
+        return Owner::orderBy('id', 'desc')->paginate($pagination);
     }
 }

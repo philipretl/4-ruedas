@@ -151,9 +151,9 @@ class InfoOwnerTest extends TestCase
                     'owners_paginated' => [
                         'owners' => [
                             [
-                               'id' => $this->owners[0]->id,
-                               'full_name' => $this->owners[0]->full_name,
-                               'dni' => $this->owners[0]->dni,
+                               'id' => $this->owners[2]->id,
+                               'full_name' => $this->owners[2]->full_name,
+                               'dni' => $this->owners[2]->dni,
                             ],
                             [
                                 'id' => $this->owners[1]->id,
@@ -161,9 +161,9 @@ class InfoOwnerTest extends TestCase
                                 'dni' => $this->owners[1]->dni,
                             ],
                             [
-                                'id' => $this->owners[2]->id,
-                                'full_name' => $this->owners[2]->full_name,
-                                'dni' => $this->owners[2]->dni,
+                                'id' => $this->owners[0]->idt ,
+                                'full_name' => $this->owners[0]->full_name,
+                                'dni' => $this->owners[0]->dni,
                             ]
                         ]
                     ]
