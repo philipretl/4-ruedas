@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba798d7c-9d6b-4921-b005-a03386e109f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Documentation/1.0/owner/update_owner.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Documentation/1.0/vehicle/register_vehicle.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Documentation/1.0/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/Documentation/1.0/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Documentation/1.0/owner/register_owner.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/Documentation/1.0/owner/register_owner.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/VehicleResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/VehicleResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/ServicesProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/ServicesProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Contracts/VehiclesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Contracts/VehiclesService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/VehiclesServiceImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/VehiclesServiceImpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/OwnerResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/OwnerResource.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603835861454</updated>
       <workItem from="1603835864127" duration="9797000" />
-      <workItem from="1603925128277" duration="2586000" />
+      <workItem from="1603925128277" duration="3305000" />
     </task>
     <servers />
   </component>

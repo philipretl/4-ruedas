@@ -16,6 +16,8 @@ class OwnerResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'name'=> $this->name,
+            'last_name'=> $this->last_name,
             'full_name' => $this->full_name,
             'dni' => $this->dni,
             'user_id' => $this->whenLoaded('user', function (){
